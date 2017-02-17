@@ -27,7 +27,7 @@ docker login --username ${USERNAME} --password ${PASSWORD} ${REGISTRY}
 
 if [ $? -eq 0 ]
 then
-  tar -cvzf /etc/docker.tar.gz ~/.docker/config.json
+  tar -cvzf /etc/docker.tar.gz ~/.docker
 else
   echo "Failed to login to the docker registry"
   exit 1
